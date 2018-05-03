@@ -1,0 +1,19 @@
+<!Doctype html>
+{% load staticfiles %}
+{% load cloudinary %}
+
+<head>
+    <title>Book a Room</title>
+</head>
+<body>
+
+
+	<h1>
+		You are logged in {{user.name}} {{user.password}}
+	</h1>
+
+
+{% cloudinary user.username width=100 height=150 crop="fill"   radius="max"  %}
+
+</body>
+</html>

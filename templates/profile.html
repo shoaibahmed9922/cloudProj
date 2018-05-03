@@ -1,0 +1,19 @@
+<!Doctype html>
+<head>
+    <title>Signup</title>
+</head>
+<body>
+	<form action="/User/updateprof/" method="post" enctype="multipart/form-data">{% csrf_token %}
+        Name <input type="text" name="name"><br>
+        Update Password <input type="password" name="password"><br>
+        Update Image:
+    <input type="file" name="photo" id="photo"><br>
+
+        <input type="submit" value="Update"><br>
+    </form>
+</body>
+</html>
+
+
+
+

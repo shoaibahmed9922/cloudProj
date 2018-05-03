@@ -1,0 +1,36 @@
+<!Doctype html>
+<head>
+    <title>Hotels</title>
+</head>
+
+
+
+<body>
+
+<h1>Rooms</h1>
+
+
+
+
+
+<ul>
+{% for i in obj %}
+    <li>
+	<img src="{{i.photo.url}}" alt="Smiley face" height="100" width="100">        {{ i.Price }}        
+	     <a href="/Review/{{ i.id }}/">See Reviews</a>  
+
+{% if i.userid  is None %}
+
+   <a href="/bookaroom_view/{{ i.id }}/">Available: Book it now</a>  
+ 
+
+   
+{% else %}
+     Not Available
+{% endif %}
+{% endfor %}
+</ul>
+
+
+</body>
+</html>

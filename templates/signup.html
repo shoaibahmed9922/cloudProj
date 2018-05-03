@@ -1,0 +1,18 @@
+<!Doctype html>
+<head>
+    <title>Signup</title>
+</head>
+
+<body>
+	<form action="/add_user/" method="post" enctype="multipart/form-data">{% csrf_token %}
+        Mail <input type="mail" name="mail"><br>
+        Username <input type="text" name="username"><br>
+        Name <input type="text" name="name"><br>
+        Password <input type="password" name="password"><br>
+        Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload"><br>
+
+        <input type="submit" value="Register"><br>
+    </form>
+</body>
+</html>

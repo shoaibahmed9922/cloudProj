@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+
+[packages]
+pillow = "*"
+linkedin = "*"
+dj-database-url = "*"
+"psycopg2" = "*"
+python-social-auth = "*"
+social-auth-app-django = "*"
+cloudinary = "*"
+urlopen = "*"
+
+[requires]
+python_version = "3.5"

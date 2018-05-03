@@ -1,0 +1,34 @@
+<!Doctype html>
+<head>
+    <title>Hotels</title>
+</head>
+
+
+
+<body>
+
+<h1>Reviews</h1>
+
+<ul>
+{% for i in obj %}
+    <li>
+        <h2>{{ i }} </h2>  <br>
+        <br>
+
+{% endfor %}
+</ul>
+
+
+
+<form action="/addcomm/{{roomid}}/" id="usrform">
+
+  <input type="submit">
+</form>
+<br>
+<textarea rows="4" cols="50" name="comment" form="usrform">
+Enter text here...</textarea>
+
+</body>
+</html>
+
+
